@@ -1,4 +1,5 @@
-Build: ng build --output-path docs
+Build: 
+ - npm run daddy:build
 Deploy:
  - git add -A
  - git commit -m "stuff"
