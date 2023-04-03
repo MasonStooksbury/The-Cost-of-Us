@@ -1,0 +1,218 @@
+[
+    {
+        "cpu_name": "Celeron G3950",
+        "power_consumption": 15.66
+    },
+    {
+        "cpu_name": "Ryzen 3 2200G",
+        "power_consumption": 20.8
+    },
+    {
+        "cpu_name": "Ryzen 5 2400G",
+        "power_consumption": 27.45
+    },
+    {
+        "cpu_name": "Pentium G4620",
+        "power_consumption": 27.8
+    },
+    {
+        "cpu_name": "Pentium G4520",
+        "power_consumption": 28.15
+    },
+    {
+        "cpu_name": "Core i3-7100",
+        "power_consumption": 36.63
+    },
+    {
+        "cpu_name": "Core i3-7350K",
+        "power_consumption": 42.89
+    },
+    {
+        "cpu_name": "Core i5-4690K",
+        "power_consumption": 51.34
+    },
+    {
+        "cpu_name": "Core i3-8350K",
+        "power_consumption": 52.53
+    },
+    {
+        "cpu_name": "Core i5-7600K",
+        "power_consumption": 57.53
+    },
+    {
+        "cpu_name": "Ryzen 3 1300X",
+        "power_consumption": 58.06
+    },
+    {
+        "cpu_name": "Core i5-6600K",
+        "power_consumption": 60.53
+    },
+    {
+        "cpu_name": "Core i5-8400",
+        "power_consumption": 61.1
+    },
+    {
+        "cpu_name": "Ryzen 7 7700X",
+        "power_consumption": 69
+    },
+    {
+        "cpu_name": "Core i5-13600K",
+        "power_consumption": 70
+    },
+    {
+        "cpu_name": "Core i7-13700K",
+        "power_consumption": 70
+    },
+    {
+        "cpu_name": "Core i5-8600K",
+        "power_consumption": 70.79
+    },
+    {
+        "cpu_name": "Ryzen 7 5700X",
+        "power_consumption": 72
+    },
+    {
+        "cpu_name": "Core i5-11600K",
+        "power_consumption": 72
+    },
+    {
+        "cpu_name": "Ryzen 7 5800X3D",
+        "power_consumption": 73
+    },
+    {
+        "cpu_name": "Core i5-2500K",
+        "power_consumption": 73.43
+    },
+    {
+        "cpu_name": "Core i7-3770K",
+        "power_consumption": 74.83
+    },
+    {
+        "cpu_name": "Core i7-4770K",
+        "power_consumption": 76.21
+    },
+    {
+        "cpu_name": "Ryzen 7 5800X",
+        "power_consumption": 77
+    },
+    {
+        "cpu_name": "Core i5-10600K",
+        "power_consumption": 77
+    },
+    {
+        "cpu_name": "Ryzen 5 2600X",
+        "power_consumption": 77.97
+    },
+    {
+        "cpu_name": "Core i5-9600K",
+        "power_consumption": 81.52
+    },
+    {
+        "cpu_name": "Core i7-6700K",
+        "power_consumption": 82.55
+    },
+    {
+        "cpu_name": "Core i7-2600K",
+        "power_consumption": 87.87
+    },
+    {
+        "cpu_name": "Core i7-12700K",
+        "power_consumption": 88
+    },
+    {
+        "cpu_name": "Core i5-12600K",
+        "power_consumption": 88
+    },
+    {
+        "cpu_name": "Ryzen 7 3700X",
+        "power_consumption": 90.26
+    },
+    {
+        "cpu_name": "Ryzen 9 7950X",
+        "power_consumption": 91
+    },
+    {
+        "cpu_name": "Ryzen 5 1600X",
+        "power_consumption": 91.54
+    },
+    {
+        "cpu_name": "Core i7-4790K",
+        "power_consumption": 93.72
+    },
+    {
+        "cpu_name": "Core i7-7700K",
+        "power_consumption": 95.14
+    },
+    {
+        "cpu_name": "Ryzen 9 7900X",
+        "power_consumption": 102
+    },
+    {
+        "cpu_name": "Ryzen 7 1700X",
+        "power_consumption": 108.07
+    },
+    {
+        "cpu_name": "Core i9-13900K",
+        "power_consumption": 109
+    },
+    {
+        "cpu_name": "Core i7-11700K",
+        "power_consumption": 110
+    },
+    {
+        "cpu_name": "Ryzen 7 1800X",
+        "power_consumption": 117.13
+    },
+    {
+        "cpu_name": "Ryzen 7 2700X",
+        "power_consumption": 117.18
+    },
+    {
+        "cpu_name": "Core i7-10700K",
+        "power_consumption": 118
+    },
+    {
+        "cpu_name": "Core i7-9700K",
+        "power_consumption": 124.27
+    },
+    {
+        "cpu_name": "Ryzen 9 5900X",
+        "power_consumption": 127
+    },
+    {
+        "cpu_name": "Ryzen 9 5950X",
+        "power_consumption": 130
+    },
+    {
+        "cpu_name": "Core i9-12900K",
+        "power_consumption": 136
+    },
+    {
+        "cpu_name": "Ryzen 9 3900X",
+        "power_consumption": 141.36
+    },
+    {
+        "cpu_name": "Ryzen 9 3950X",
+        "power_consumption": 144.76
+    },
+    {
+        "cpu_name": "Core i7-8700K",
+        "power_consumption": 150.91
+    },
+    {
+        "cpu_name": "Core i9-9900K",
+        "power_consumption": 168.48
+    },
+    {
+        "cpu_name": "Core i9-11900K",
+        "power_consumption": 170
+    },
+    {
+        "cpu_name": "Core i9-10900K",
+        "power_consumption": 183
+    },
+    {
+        "cpu_name": "Core i9-9900KS",
+        "power_consumption": 192.7
+    }
+]   

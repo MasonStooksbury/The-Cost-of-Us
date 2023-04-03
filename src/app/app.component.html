@@ -1,1 +1,26 @@
-<h1>It do.png</h1>
+<mat-card class="main-div">
+	<mat-card-header class="main-header">
+		THE COST OF US
+	</mat-card-header>
+	<mat-card-content>
+		<form>
+			<mat-form-field appearance="fill">
+				<mat-label>Select your CPU</mat-label>
+				<mat-select [(value)]="selected_cpu">
+				  <mat-option>None</mat-option>
+				  <mat-option *ngFor="let cpu of cpu_list" [value]="selected_cpu">{{cpu.cpu_name}}</mat-option>
+				</mat-select>
+			</mat-form-field>
+			<mat-form-field class="right-one" appearance="fill">
+				<mat-label>Select your GPU</mat-label>
+				<mat-select [(value)]="selected_gpu">
+				  <mat-option>None</mat-option>
+				  <mat-option *ngFor="let gpu of gpu_list" [value]="selected_gpu">{{gpu.gpu_name}}</mat-option>
+				</mat-select>
+			</mat-form-field>
+		</form>
+	</mat-card-content>
+	<mat-card-actions>
+		<button mat-raised-button>Figure cost</button>
+	</mat-card-actions>
+</mat-card>

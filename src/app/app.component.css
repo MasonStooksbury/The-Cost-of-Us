@@ -1,0 +1,16 @@
+.main-div {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-header {
+    font-family: 'headliner';
+    font-size: 13em;
+    height: 20vh;
+}
+
+.right-one {
+    margin-left: 2em;
+}
