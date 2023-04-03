@@ -11,6 +11,22 @@
 				  <mat-option *ngFor="let cpu of cpu_list" [value]="selected_cpu">{{cpu.cpu_name}}</mat-option>
 				</mat-select>
 			</mat-form-field>
+
+			<!-- This can work if we do it right -->
+			<!-- <mat-form-field>
+				<mat-label>CPU</mat-label>
+				<input type="text"
+					placeholder="Pick one"
+					aria-label="Number"
+					matInput
+					[formControl]="myControl"
+					[matAutocomplete]="auto">
+				<mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+					<mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+						{{option}}
+					</mat-option>
+				</mat-autocomplete>
+			</mat-form-field> -->
 			<mat-form-field class="right-one" appearance="fill">
 				<mat-label>Select your GPU</mat-label>
 				<mat-select [(value)]="selected_gpu">
@@ -21,6 +37,6 @@
 		</form>
 	</mat-card-content>
 	<mat-card-actions>
-		<button mat-raised-button>Figure cost</button>
+		<button mat-raised-button [disabled]="false">Figure cost</button>
 	</mat-card-actions>
 </mat-card>

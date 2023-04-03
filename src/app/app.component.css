@@ -3,12 +3,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("/../assets/tlou.png");
+    background-size: cover;
+    background-position-y: -10vh;
 }
 
 .main-header {
     font-family: 'headliner';
     font-size: 13em;
+    text-shadow: 2px 1px 10px black;
+    align-items: center;
     height: 20vh;
+    color: white;
+    margin-bottom: 1.5rem;
 }
 
 .right-one {
