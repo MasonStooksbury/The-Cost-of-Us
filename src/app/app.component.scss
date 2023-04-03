@@ -5,7 +5,7 @@
     align-items: center;
     background-image: url("/../assets/tlou.png");
     background-size: cover;
-    background-position-y: -10vh;
+    // background-position-y: -10vh;
 }
 
 .main-header {
@@ -18,6 +18,13 @@
     margin-bottom: 1.5rem;
 }
 
-.right-one {
-    margin-left: 2em;
+.form-row {
+    width: 750px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.mat-mdc-raised-button:disabled {
+    background-color: rgba(150, 150, 150, 0.6)
 }
