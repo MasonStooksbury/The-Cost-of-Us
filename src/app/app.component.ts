@@ -3,6 +3,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Observable } from 'rxjs';
 import cpu_data from '../assets/cpu-consumption.json';
 import gpu_data from '../assets/gpu-consumption.json';
+import { EChartsOption } from 'echarts';
 
 @Component({
   selector: 'app-root',
@@ -27,8 +28,26 @@ export class AppComponent {
   cpuControl = new FormControl('');
   gpuControl = new FormControl('');
 
-  options: string[] = ['One', 'Two', 'Three'];
-  filteredOptions: Observable<string[]> | undefined;
+  // options: string[] = ['One', 'Two', 'Three'];
+  // filteredOptions: Observable<string[]> | undefined;
+
+  showFormAndNotChart = false;
+
+  options: EChartsOption = {
+    xAxis: {
+      type: 'category',
+      data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    },
+    yAxis: {
+      type: 'value'
+    },
+    series: [
+      {
+        data: [120, 200, 150, 80, 70, 110, 130],
+        type: 'bar'
+      }
+    ]
+  };
 
   ngOnInit() {
     this.fg.controls['cpu'].valueChanges.subscribe((ft) => {
@@ -40,5 +59,4 @@ export class AppComponent {
       this.filtered_gpu_list = !!ft ? this.gpu_list.filter((c) => c.toLowerCase().includes(ft.toLowerCase())) : Object.assign([], this.gpu_list);
     });
   }
-
 }

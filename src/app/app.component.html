@@ -3,7 +3,7 @@
 		THE COST OF US
 	</mat-card-header>
 
-	<mat-card-content>
+	<mat-card-content *ngIf="showFormAndNotChart">
 		<div class="form-row">
 
 			<mat-form-field appearance="fill">
@@ -33,7 +33,11 @@
 		</div>
 	</mat-card-content>
 
-	<mat-card-actions>
+	<mat-card-actions *ngIf="showFormAndNotChart">
 		<button mat-raised-button [disabled]="fg.invalid">Figure cost</button>
 	</mat-card-actions>
+
+	<mat-card-content class="chart" *ngIf="!showFormAndNotChart">
+		<div echarts [options]="options"></div>
+	</mat-card-content>
 </mat-card>
