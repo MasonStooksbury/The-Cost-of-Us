@@ -1,206 +1,206 @@
 [
     {
-        "gpu_name": "RX 6800",
-        "power_consumption": 235.4
+        "name": "RX 6800",
+        "power": 235.4
     },
     {
-        "gpu_name": "RTX 3070",
-        "power_consumption": 219.3
+        "name": "RTX 3070",
+        "power": 219.3
     },
     {
-        "gpu_name": "RX 6700 XT",
-        "power_consumption": 215.5
+        "name": "RX 6700 XT",
+        "power": 215.5
     },
     {
-        "gpu_name": "RTX 3060 Ti",
-        "power_consumption": 205.5
+        "name": "RTX 3060 Ti",
+        "power": 205.5
     },
     {
-        "gpu_name": "RTX 3060 12GB",
-        "power_consumption": 171.8
+        "name": "RTX 3060 12GB",
+        "power": 171.8
     },
     {
-        "gpu_name": "RX 6900 XT",
-        "power_consumption": 308.5
+        "name": "RX 6900 XT",
+        "power": 308.5
     },
     {
-        "gpu_name": "RX 5700",
-        "power_consumption": 165.8
+        "name": "RX 5700",
+        "power": 165.8
     },
     {
-        "gpu_name": "RX 6800 XT",
-        "power_consumption": 303.4
+        "name": "RX 6800 XT",
+        "power": 303.4
     },
     {
-        "gpu_name": "GTX 1660 Super",
-        "power_consumption": 124.2
+        "name": "GTX 1660 Super",
+        "power": 124.2
     },
     {
-        "gpu_name": "GTX 1660 Ti",
-        "power_consumption": 124.0
+        "name": "GTX 1660 Ti",
+        "power": 124.0
     },
     {
-        "gpu_name": "RTX 2080 Ti",
-        "power_consumption": 259.4
+        "name": "RTX 2080 Ti",
+        "power": 259.4
     },
     {
-        "gpu_name": "RX 5600 XT",
-        "power_consumption": 158.3
+        "name": "RX 5600 XT",
+        "power": 158.3
     },
     {
-        "gpu_name": "GTX 1650 GDDR6",
-        "power_consumption": 83.3
+        "name": "GTX 1650 GDDR6",
+        "power": 83.3
     },
     {
-        "gpu_name": "RTX 2080",
-        "power_consumption": 219.0
+        "name": "RTX 2080",
+        "power": 219.0
     },
     {
-        "gpu_name": "RTX 2060 Super",
-        "power_consumption": 177.3
+        "name": "RTX 2060 Super",
+        "power": 177.3
     },
     {
-        "gpu_name": "RTX 2060",
-        "power_consumption": 159.2
+        "name": "RTX 2060",
+        "power": 159.2
     },
     {
-        "gpu_name": "RTX 3080",
-        "power_consumption": 333.0
+        "name": "RTX 3080",
+        "power": 333.0
     },
     {
-        "gpu_name": "RTX 2070 Super",
-        "power_consumption": 213.3
+        "name": "RTX 2070 Super",
+        "power": 213.3
     },
     {
-        "gpu_name": "GTX 1650 Super",
-        "power_consumption": 102.3
+        "name": "GTX 1650 Super",
+        "power": 102.3
     },
     {
-        "gpu_name": "RTX 3090",
-        "power_consumption": 361.0
+        "name": "RTX 3090",
+        "power": 361.0
     },
     {
-        "gpu_name": "Titan RTX",
-        "power_consumption": 287.7
+        "name": "Titan RTX",
+        "power": 287.7
     },
     {
-        "gpu_name": "Titan V",
-        "power_consumption": 249.4
+        "name": "Titan V",
+        "power": 249.4
     },
     {
-        "gpu_name": "GTX 1660",
-        "power_consumption": 119.2
+        "name": "GTX 1660",
+        "power": 119.2
     },
     {
-        "gpu_name": "RTX 2080 Super",
-        "power_consumption": 246.8
+        "name": "RTX 2080 Super",
+        "power": 246.8
     },
     {
-        "gpu_name": "RTX 2070",
-        "power_consumption": 196.1
+        "name": "RTX 2070",
+        "power": 196.1
     },
     {
-        "gpu_name": "RX 5700 XT",
-        "power_consumption": 215.1
+        "name": "RX 5700 XT",
+        "power": 215.1
     },
     {
-        "gpu_name": "GTX 1050 Ti",
-        "power_consumption": 61.0
+        "name": "GTX 1050 Ti",
+        "power": 61.0
     },
     {
-        "gpu_name": "GTX 1070",
-        "power_consumption": 141.7
+        "name": "GTX 1070",
+        "power": 141.7
     },
     {
-        "gpu_name": "GTX 1650",
-        "power_consumption": 82.5
+        "name": "GTX 1650",
+        "power": 82.5
     },
     {
-        "gpu_name": "GTX 1080",
-        "power_consumption": 180.4
+        "name": "GTX 1080",
+        "power": 180.4
     },
     {
-        "gpu_name": "Titan Xp",
-        "power_consumption": 249.5
+        "name": "Titan Xp",
+        "power": 249.5
     },
     {
-        "gpu_name": "RX 5500 XT 8GB",
-        "power_consumption": 133.7
+        "name": "RX 5500 XT 8GB",
+        "power": 133.7
     },
     {
-        "gpu_name": "GTX 1070 Ti",
-        "power_consumption": 175.7
+        "name": "GTX 1070 Ti",
+        "power": 175.7
     },
     {
-        "gpu_name": "GTX 1080 Ti",
-        "power_consumption": 246.8
+        "name": "GTX 1080 Ti",
+        "power": 246.8
     },
     {
-        "gpu_name": "GTX 1060 6GB",
-        "power_consumption": 115.0
+        "name": "GTX 1060 6GB",
+        "power": 115.0
     },
     {
-        "gpu_name": "GTX 1050",
-        "power_consumption": 54.7
+        "name": "GTX 1050",
+        "power": 54.7
     },
     {
-        "gpu_name": "Radeon VII",
-        "power_consumption": 266.7
+        "name": "Radeon VII",
+        "power": 266.7
     },
     {
-        "gpu_name": "RX 5500 XT 4GB",
-        "power_consumption": 133.1
+        "name": "RX 5500 XT 4GB",
+        "power": 133.1
     },
     {
-        "gpu_name": "GTX 1060 3GB",
-        "power_consumption": 108.6
+        "name": "GTX 1060 3GB",
+        "power": 108.6
     },
     {
-        "gpu_name": "RX Vega 56",
-        "power_consumption": 210.5
+        "name": "RX Vega 56",
+        "power": 210.5
     },
     {
-        "gpu_name": "RX 560 4GB",
-        "power_consumption": 65.1
+        "name": "RX 560 4GB",
+        "power": 65.1
     },
     {
-        "gpu_name": "RX Vega 64",
-        "power_consumption": 297.0
+        "name": "RX Vega 64",
+        "power": 297.0
     },
     {
-        "gpu_name": "RX 570 4GB",
-        "power_consumption": 163.1
+        "name": "RX 570 4GB",
+        "power": 163.1
     },
     {
-        "gpu_name": "GTX 980",
-        "power_consumption": 173.2
+        "name": "GTX 980",
+        "power": 173.2
     },
     {
-        "gpu_name": "GTX Titan X",
-        "power_consumption": 232.1
+        "name": "GTX Titan X",
+        "power": 232.1
     },
     {
-        "gpu_name": "GTX 980 Ti",
-        "power_consumption": 219.3
+        "name": "GTX 980 Ti",
+        "power": 219.3
     },
     {
-        "gpu_name": "RX 590",
-        "power_consumption": 219.2
+        "name": "RX 590",
+        "power": 219.2
     },
     {
-        "gpu_name": "GTX 970",
-        "power_consumption": 150.4
+        "name": "GTX 970",
+        "power": 150.4
     },
     {
-        "gpu_name": "RX 580",
-        "power_consumption": 214.2
+        "name": "RX 580",
+        "power": 214.2
     },
     {
-        "gpu_name": "R9 Fury X",
-        "power_consumption": 261.1
+        "name": "R9 Fury X",
+        "power": 261.1
     },
     {
-        "gpu_name": "R9 390",
-        "power_consumption": 263.6
+        "name": "R9 390",
+        "power": 263.6
     }
 ]
