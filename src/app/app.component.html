@@ -2,41 +2,38 @@
 	<mat-card-header class="main-header">
 		THE COST OF US
 	</mat-card-header>
+
 	<mat-card-content>
-		<form>
+		<div class="form-row">
+
 			<mat-form-field appearance="fill">
-				<mat-label>Select your CPU</mat-label>
-				<mat-select [(value)]="selected_cpu">
-				  <mat-option>None</mat-option>
-				  <mat-option *ngFor="let cpu of cpu_list" [value]="selected_cpu">{{cpu.cpu_name}}</mat-option>
-				</mat-select>
+				<mat-label>CPU</mat-label>
+				<input type="text" placeholder="Select Your CPU" aria-label="cpu" matInput
+					[formControl]="fg.controls['cpu']" [matAutocomplete]="auto1">
+				<mat-autocomplete #auto1="matAutocomplete">
+					<mat-option *ngFor="let cpu of filtered_cpu_list" [value]="cpu"> {{cpu}}</mat-option>
+				</mat-autocomplete>
 			</mat-form-field>
 
-			<!-- This can work if we do it right -->
-			<!-- <mat-form-field>
-				<mat-label>CPU</mat-label>
-				<input type="text"
-					placeholder="Pick one"
-					aria-label="Number"
-					matInput
-					[formControl]="myControl"
-					[matAutocomplete]="auto">
-				<mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
-					<mat-option *ngFor="let option of filteredOptions | async" [value]="option">
-						{{option}}
-					</mat-option>
+			<mat-form-field appearance="fill">
+				<mat-label>GPU</mat-label>
+				<input type="text" placeholder="Select Your GPU" aria-label="gpu" matInput
+					[formControl]="fg.controls['gpu']" [matAutocomplete]="auto2">
+				<mat-autocomplete autoActiveFirstOption #auto2="matAutocomplete">
+					<mat-option *ngFor="let gpu of filtered_gpu_list" [value]="gpu">{{gpu}}</mat-option>
 				</mat-autocomplete>
-			</mat-form-field> -->
-			<mat-form-field class="right-one" appearance="fill">
-				<mat-label>Select your GPU</mat-label>
-				<mat-select [(value)]="selected_gpu">
-				  <mat-option>None</mat-option>
-				  <mat-option *ngFor="let gpu of gpu_list" [value]="selected_gpu">{{gpu.gpu_name}}</mat-option>
-				</mat-select>
 			</mat-form-field>
-		</form>
+
+			<mat-form-field appearance="fill">
+				<mat-label>KW/h cost</mat-label>
+				<input type="text" placeholder="Enter KW/h cost" aria-label="gpu" matInput
+				[formControl]="fg.controls['kwh']">
+			</mat-form-field>
+
+		</div>
 	</mat-card-content>
+
 	<mat-card-actions>
-		<button mat-raised-button [disabled]="false">Figure cost</button>
+		<button mat-raised-button [disabled]="fg.invalid">Figure cost</button>
 	</mat-card-actions>
 </mat-card>
