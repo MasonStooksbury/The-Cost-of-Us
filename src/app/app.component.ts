@@ -31,7 +31,7 @@ export class AppComponent {
   // options: string[] = ['One', 'Two', 'Three'];
   // filteredOptions: Observable<string[]> | undefined;
 
-  showFormAndNotChart = false;
+  showFormAndNotChart = true;
 
   options: EChartsOption = {
     xAxis: {
@@ -58,5 +58,9 @@ export class AppComponent {
     this.fg.controls['gpu'].valueChanges.subscribe((ft) => {
       this.filtered_gpu_list = !!ft ? this.gpu_list.filter((c) => c.toLowerCase().includes(ft.toLowerCase())) : Object.assign([], this.gpu_list);
     });
+  }
+
+  changeStuff(event: Event) {
+    this.showFormAndNotChart = !this.showFormAndNotChart;
   }
 }

@@ -34,7 +34,7 @@
 	</mat-card-content>
 
 	<mat-card-actions *ngIf="showFormAndNotChart">
-		<button mat-raised-button [disabled]="fg.invalid">Figure cost</button>
+		<button mat-raised-button [disabled]="fg.invalid" (click)="changeStuff($event)">Figure cost</button>
 	</mat-card-actions>
 
 	<mat-card-content class="chart" *ngIf="!showFormAndNotChart">
