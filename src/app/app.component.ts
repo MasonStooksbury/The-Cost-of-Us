@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { endWith, Observable } from 'rxjs';
-import { EChartsOption, init } from 'echarts';
+import { EChartsOption } from 'echarts';
 import cpu_data from '../assets/cpu-consumption.json';
 import gpu_data from '../assets/gpu-consumption.json';
 import beat_time_data from '../assets/how-long-to-beat-data.json';
@@ -11,7 +10,7 @@ import beat_time_data from '../assets/how-long-to-beat-data.json';
 	templateUrl: './app.component.html',
 	styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
 	title = 'the-cost-of-us';
 
 	fg = new FormGroup({
