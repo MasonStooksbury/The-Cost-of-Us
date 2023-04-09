@@ -31,7 +31,7 @@ export class AppComponent {
   // options: string[] = ['One', 'Two', 'Three'];
   // filteredOptions: Observable<string[]> | undefined;
 
-  showFormAndNotChart = true;
+  showFormAndNotChart = !true;
 
   options: EChartsOption = {
     xAxis: {
@@ -60,7 +60,7 @@ export class AppComponent {
     });
   }
 
-  changeStuff(event: Event) {
+  toggleChart() {
     this.showFormAndNotChart = !this.showFormAndNotChart;
   }
 }
