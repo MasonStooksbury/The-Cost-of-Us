@@ -60,6 +60,10 @@
         "power": 69
     },
     {
+        "name": "Ryzen 7 7700",
+        "power": 88
+    },
+    {
         "name": "Core i5-13600K",
         "power": 70
     },
@@ -150,6 +154,22 @@
     {
         "name": "Ryzen 9 7900X",
         "power": 102
+    },
+    {
+        "name": "Ryzen 9 7900X3D",
+        "power": 114
+    },
+    {
+        "name": "Ryzen 7 7800X3D",
+        "power": 120
+    },
+    {
+        "name": "Ryzen 9 7950X3D",
+        "power": 120
+    },
+    {
+        "name": "Ryzen 9 ",
+        "power": 120
     },
     {
         "name": "Ryzen 7 1700X",
