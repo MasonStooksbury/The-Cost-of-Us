@@ -40,4 +40,49 @@
 	<mat-card-content class="chart" *ngIf="!show_form_and_not_chart">
 		<div echarts [options]="options"></div>
 	</mat-card-content>
+
+	<mat-card-content class="extra_data" *ngIf="!show_form_and_not_chart">
+		<h2 class="extra_data_header">More Data</h2>
+		<div>
+			<span>Formula for calculating cost: 
+				(CPU power consumption + GPU power consumption) * Hours to beat the game * Kilowatt per Hour cost</span>
+			<p>Playtime data taken from HowLongToBeat.com (https://howlongtobeat.com/game/109104)</p>
+		</div>
+		<div>
+			<table mat-table [dataSource]="datasource" class="mat-elevation-z8 demo-table">
+				<!-- Playstyle Column -->
+				<ng-container matColumnDef="playstyle">
+				  <th mat-header-cell *matHeaderCellDef> Playstyle </th>
+				  <td mat-cell *matCellDef="let element"> {{element.playstyle}} </td>
+				</ng-container>
+			  
+				<!-- Average Column -->
+				<ng-container matColumnDef="average">
+				  <th mat-header-cell *matHeaderCellDef> Average </th>
+				  <td mat-cell *matCellDef="let element"> {{element.average}} </td>
+				</ng-container>
+			  
+				<!-- Median Column -->
+				<ng-container matColumnDef="median">
+				  <th mat-header-cell *matHeaderCellDef> Median </th>
+				  <td mat-cell *matCellDef="let element"> {{element.median}} </td>
+				</ng-container>
+			  
+				<!-- Rushed Column -->
+				<ng-container matColumnDef="rushed">
+				  <th mat-header-cell *matHeaderCellDef> Rushed </th>
+				  <td mat-cell *matCellDef="let element"> {{element.rushed}} </td>
+				</ng-container>
+
+				<!-- Leisure Column -->
+				<ng-container matColumnDef="leisure">
+					<th mat-header-cell *matHeaderCellDef> Leisure </th>
+					<td mat-cell *matCellDef="let element"> {{element.leisure}} </td>
+				</ng-container>
+			  
+				<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+				<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+			  </table>			  
+		</div>
+	</mat-card-content>
 </mat-card>

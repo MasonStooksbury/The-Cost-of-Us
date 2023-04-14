@@ -64,6 +64,11 @@ export class AppComponent implements OnInit{
 		series: []
 	};
 
+	
+	// Used for table of hours on chart screen
+	displayedColumns: string[] = ['playstyle', 'average', 'median', 'rushed', 'leisure'];
+	datasource: any;
+
 	ngOnInit() {
 		this.fg.controls['cpu'].valueChanges.subscribe((ft) => {
 			this.filtered_cpu_list = !!ft ? this.cpu_list.filter((c) => c.toLowerCase().includes(ft.toLowerCase())) : Object.assign([], this.cpu_list);
@@ -87,6 +92,7 @@ export class AppComponent implements OnInit{
 		this.kilowatt_per_hour_cost = parseFloat(temp ? temp : '0');
 
 		this.setupChartData();
+		this.setupTableData();
 	}
 
 	setupChartData() {
@@ -156,6 +162,30 @@ export class AppComponent implements OnInit{
 		})
 
 		this.options.series = <EChartsOption["series"]>new_series_data;
+	}
+
+	setupTableData() {
+		interface PlaystyleTimes {
+			playstyle: string;
+			average: number;
+			median: number;
+			rushed: number;
+			leisure: number;
+		}
+
+		const playstyle_times: PlaystyleTimes[] = [];
+
+		for (let playstyle of beat_time_data) {
+			playstyle_times.push({
+				playstyle: playstyle.play_style,
+				average: playstyle.times.average,
+				median: playstyle.times.median,
+				rushed: playstyle.times.rushed,
+				leisure: playstyle.times.leisure
+			})
+		}
+
+		this.datasource = playstyle_times;
 	}
 
 	// component_name should never be null, but I'm going to put it here anyway

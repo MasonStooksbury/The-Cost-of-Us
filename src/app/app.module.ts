@@ -11,6 +11,7 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatTableModule } from '@angular/material/table';
 import { NgxEchartsModule } from 'ngx-echarts';
 import * as echarts from 'echarts';
 
@@ -29,6 +30,7 @@ import * as echarts from 'echarts';
     FormsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
+    MatTableModule,
     NgxEchartsModule.forRoot({
       echarts
     })
