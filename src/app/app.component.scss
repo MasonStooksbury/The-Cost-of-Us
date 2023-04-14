@@ -1,49 +1,44 @@
 .main-div {
     height: 100vh;
     display: flex;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     background-image: url("/../assets/tlou.png");
     background-size: cover;
-    background-repeat: repeat-y;
 
-    // background-position-y: -10vh;
-    @media (max-width: 700px) {
-        overflow: scroll;
+    @media (max-width: 600px) {
+        overflow: auto;
         max-width: 100%;
         // margin: 0;
         box-shadow: none;
         // padding: 0;
     }
 }
+mat-card {
+    margin: 1em;
+}
 
 .main-header {
     font-family: 'headliner';
-    font-size: 13em;
+    font-size: clamp(3rem, 1.09523809537rem + 8.45vw, 13.5rem);
+    // https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/
     text-shadow: 2px 1px 10px black;
     align-items: center;
-    height: 20vh;
+    // height: 20vh;
     color: white;
-    margin-bottom: 1.5rem;
-    // margin-top: 10rem;
-    @media (max-width: 600px) {
-        font-size: 4rem;
-        margin-top: 5rem;
-        justify-content: center;
-    }
+    margin-bottom: 3.5rem;
+    white-space: nowrap;
+
 }
 
 .form-row {
-    width: 750px;
+    max-width: 750px;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    @media (max-width: 600px) {
-        display: flex;
-        flex-direction: column;
-        > * {
-            margin-bottom: 16px;
-        }
+    flex-flow: row wrap;
+    justify-content: center;
+    mat-form-field {
+        margin: 1em;
     }
 }
 
@@ -51,19 +46,32 @@
     background-color: rgba(150, 150, 150, 0.6);
 }
 
+.main-card {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    &.transparent {
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+    }
+}
+
 .chart {
     position: relative;
     width: 50vw;
     background-color: white;
     border-radius: 1rem;
-    padding: 2rem;
-    padding-top: 1.5rem;
+    margin: 2rem;
+    margin-top: 1.5rem;
 }
 
 .back-button {
-    position: relative;
-    top: 1em;
-    left: 0;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
     width: 3em;
     height: 3em;
     display: flex;
@@ -79,5 +87,18 @@
     span {
         text-align: center;
         width: 0.6em;
+    }
+}
+
+.extra_data {
+    position: relative;
+    width: 50vw;
+    background-color: white;
+    border-radius: 1rem;
+    margin: 2rem;
+    margin-top: 1.5rem;
+    .extra_data_header {
+        width: 100%;
+        text-align: center;
     }
 }

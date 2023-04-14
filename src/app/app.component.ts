@@ -35,7 +35,9 @@ export class AppComponent implements OnInit {
 
 	options: EChartsOption = {
 		title: {
-			text: 'Additional Cost to Beat The Game'
+			text: 'Electricity Cost to Beat The Game',
+			left: 'center',
+			padding: 0
 		},
 		tooltip: {
 			trigger: 'axis',
@@ -44,7 +46,7 @@ export class AppComponent implements OnInit {
 			}
 		},
 		legend: {
-			left: 'right'
+			top: '25px',
 		},
 		grid: {
 			left: '3%',
@@ -54,7 +56,10 @@ export class AppComponent implements OnInit {
 		},
 		xAxis: {
 			type: 'value',
-			boundaryGap: [0, 0.01]
+			boundaryGap: [0, 0.01],
+			axisLabel: {
+                formatter: '${value}',
+            }
 		},
 		yAxis: {
 			type: 'category',
