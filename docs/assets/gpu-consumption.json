@@ -16,12 +16,44 @@
         "power": 205.5
     },
     {
-        "name": "RTX 3060 12GB",
+        "name": "RTX 3060",
         "power": 171.8
     },
     {
         "name": "RX 6900 XT",
         "power": 308.5
+    },
+    {
+        "name": "RX 6950 XT",
+        "power": 335.0
+    },
+    {
+        "name": "RX 6750 XT",
+        "power": 250.0
+    },
+    {
+        "name": "RX 6700 XT",
+        "power": 230.0
+    },
+    {
+        "name": "RX 6650 XT",
+        "power": 180.0
+    },
+    {
+        "name": "RX 6600 XT",
+        "power": 160.0
+    },
+    {
+        "name": "RX 6600",
+        "power": 132.0
+    },
+    {
+        "name": "RX 6500 XT",
+        "power": 107.0
+    },
+    {
+        "name": "RX 6400",
+        "power": 53.0
     },
     {
         "name": "RX 5700",
@@ -76,8 +108,40 @@
         "power": 102.3
     },
     {
+        "name": "RX 7900 XTX",
+        "power": 355.0
+    },
+    {
+        "name": "RX 7900 XT",
+        "power": 300.0
+    },
+    {
         "name": "RTX 3090",
         "power": 361.0
+    },
+    {
+        "name": "RTX 4090",
+        "power": 450.0
+    },
+    {
+        "name": "RTX 4090 Ti",
+        "power": 600.0
+    },
+    {
+        "name": "RTX 4070",
+        "power": 186.0
+    },
+    {
+        "name": "RTX 4070 Ti",
+        "power": 285.0
+    },
+    {
+        "name": "RTX 3070 Ti",
+        "power": 240.0
+    },
+    {
+        "name": "RTX 3070",
+        "power": 215.0
     },
     {
         "name": "Titan RTX",
@@ -124,7 +188,7 @@
         "power": 249.5
     },
     {
-        "name": "RX 5500 XT 8GB",
+        "name": "RX 5500 XT",
         "power": 133.7
     },
     {
@@ -136,7 +200,7 @@
         "power": 246.8
     },
     {
-        "name": "GTX 1060 6GB",
+        "name": "GTX 1060",
         "power": 115.0
     },
     {
@@ -148,19 +212,11 @@
         "power": 266.7
     },
     {
-        "name": "RX 5500 XT 4GB",
-        "power": 133.1
-    },
-    {
-        "name": "GTX 1060 3GB",
-        "power": 108.6
-    },
-    {
         "name": "RX Vega 56",
         "power": 210.5
     },
     {
-        "name": "RX 560 4GB",
+        "name": "RX 560",
         "power": 65.1
     },
     {
@@ -168,7 +224,7 @@
         "power": 297.0
     },
     {
-        "name": "RX 570 4GB",
+        "name": "RX 570",
         "power": 163.1
     },
     {
