@@ -27,20 +27,20 @@
 			<mat-form-field appearance="fill">
 				<mat-label>KW/h cost</mat-label>
 				<input type="text" placeholder="Enter KW/h cost" aria-label="gpu" matInput
-				[formControl]="fg.controls['kwh']">
+					[formControl]="fg.controls['kwh']">
 			</mat-form-field>
 
 		</div>
 	</mat-card-content>
 
 	<mat-card-actions *ngIf="showFormAndNotChart">
-		<button mat-raised-button [disabled]="fg.invalid" (click)="toggleChart()">Figure cost</button>
+		<button mat-raised-button [disabled]="fg.invalid" (click)="changeStuff($event)">Figure cost</button>
 	</mat-card-actions>
 
 	<mat-card-content class="chart" *ngIf="!showFormAndNotChart">
 		<div class="back-button" (click)="toggleChart()">
 			<span class="material-symbols-rounded">
-			arrow_back_ios
+				arrow_back_ios
 			</span>
 		</div>
 		<div echarts [options]="options"></div>

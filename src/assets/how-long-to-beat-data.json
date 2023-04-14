@@ -1,0 +1,38 @@
+[
+    {
+        "play_style": "Main Story",
+        "times": {
+            "average": 13.97,
+            "median": 14,
+            "rushed": 11.48,
+            "leisure": 18.15
+        }
+    },
+    {
+        "play_style": "Main + Extras",
+        "times": {
+            "average": 17.08,
+            "median": 16,
+            "rushed": 13.27,
+            "leisure": 23.27
+        }
+    },
+    {
+        "play_style": "Completionist",
+        "times": {
+            "average": 22.08,
+            "median": 21,
+            "rushed": 17.25,
+            "leisure": 48.27
+        }
+    },
+    {
+        "play_style": "All PlayStyles",
+        "times": {
+            "average": 17.08,
+            "median": 15.53,
+            "rushed": 12.65,
+            "leisure": 45.65
+        }
+    }
+]
