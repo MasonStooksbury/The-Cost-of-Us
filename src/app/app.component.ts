@@ -10,7 +10,7 @@ import beat_time_data from '../assets/how-long-to-beat-data.json';
 	templateUrl: './app.component.html',
 	styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
 	title = 'the-cost-of-us';
 
 	fg = new FormGroup({
@@ -30,8 +30,7 @@ export class AppComponent implements OnInit{
 	selected_gpu_power_consumption = 0;
 	kilowatt_per_hour_cost = 0;
 
-	show_form_and_not_chart = true;
-
+	showFormAndNotChart = true;
 	x_axis_labels: string[] = [];
 
 	options: EChartsOption = {
@@ -78,8 +77,16 @@ export class AppComponent implements OnInit{
 		});
 	}
 
+	toggleChart(flag?: boolean) {
+		if (flag != undefined) {
+			this.showFormAndNotChart = flag	
+		} else {
+			this.showFormAndNotChart = !this.showFormAndNotChart;
+		}
+	}
+
 	changeStuff(event: Event) {
-		this.show_form_and_not_chart = !this.show_form_and_not_chart;
+		this.showFormAndNotChart = !this.showFormAndNotChart;
 		this.selected_cpu_power_consumption = this.getPowerConsumption('cpu', this.fg.controls['cpu'].value);
 		this.selected_gpu_power_consumption = this.getPowerConsumption('gpu', this.fg.controls['gpu'].value);
 		// This ternary is kinda gross, but the errors were pissing me off
@@ -178,7 +185,7 @@ export class AppComponent implements OnInit{
 
 	getMathResult(cpu_consumption: number, gpu_consumption: number, kilowatt_cost: number, hours_to_beat: number) {
 		const total_kw_consumption = cpu_consumption + gpu_consumption
-		const cents_to_beat_the_game = (total_kw_consumption/1000) * hours_to_beat * kilowatt_cost
+		const cents_to_beat_the_game = (total_kw_consumption / 1000) * hours_to_beat * kilowatt_cost
 		return cents_to_beat_the_game
 	}
 }

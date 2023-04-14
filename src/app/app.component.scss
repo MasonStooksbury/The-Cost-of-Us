@@ -26,13 +26,36 @@
 }
 
 .mat-mdc-raised-button:disabled {
-    background-color: rgba(150, 150, 150, 0.6)
+    background-color: rgba(150, 150, 150, 0.6);
 }
 
 .chart {
+    position: relative;
     width: 50vw;
     background-color: white;
     border-radius: 1rem;
     padding: 2rem;
     padding-top: 1.5rem;
+}
+
+.back-button {
+    position: relative;
+    top: 1em;
+    left: 0;
+    width: 3em;
+    height: 3em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    span {
+        text-align: center;
+        width: 0.6em;
+    }
 }
